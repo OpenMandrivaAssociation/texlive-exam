@@ -1,3 +1,9 @@
+# revision 22585
+# category Package
+# catalog-ctan /macros/latex/contrib/exam
+# catalog-date 2011-05-23 10:42:55 +0200
+# catalog-license lppl1.3
+# catalog-version 2.4
 Name:		texlive-exam
 Version:	2.4
 Release:	1
@@ -60,6 +66,7 @@ system.
 %doc %{_texmfdistdir}/doc/latex/exam/exam-2.4.md5
 %doc %{_texmfdistdir}/doc/latex/exam/examdoc.pdf
 %doc %{_texmfdistdir}/doc/latex/exam/examdoc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -70,3 +77,5 @@ system.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
