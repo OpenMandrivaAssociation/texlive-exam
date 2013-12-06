@@ -6,7 +6,7 @@
 # catalog-version 2.4
 Name:		texlive-exam
 Version:	2.4
-Release:	4
+Release:	5
 Summary:	Package for typesetting exam scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exam
