@@ -1,12 +1,6 @@
-# revision 22585
-# category Package
-# catalog-ctan /macros/latex/contrib/exam
-# catalog-date 2011-05-23 10:42:55 +0200
-# catalog-license lppl1.3
-# catalog-version 2.4
 Name:		texlive-exam
-Version:	2.4
-Release:	10
+Version:	2.603
+Release:	1
 Summary:	Package for typesetting exam scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exam
@@ -52,11 +46,8 @@ system.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/exam/exam.cls
-%doc %{_texmfdistdir}/doc/latex/exam/README
-%doc %{_texmfdistdir}/doc/latex/exam/exam-2.4.md5
-%doc %{_texmfdistdir}/doc/latex/exam/examdoc.pdf
-%doc %{_texmfdistdir}/doc/latex/exam/examdoc.tex
+%{_texmfdistdir}/tex/latex/exam
+%doc %{_texmfdistdir}/doc/latex/exam
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,17 +58,3 @@ system.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4-2
-+ Revision: 751671
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4-1
-+ Revision: 718394
-- texlive-exam
-- texlive-exam
-- texlive-exam
-- texlive-exam
-
