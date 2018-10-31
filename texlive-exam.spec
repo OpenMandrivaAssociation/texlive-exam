@@ -1,6 +1,6 @@
 Name:		texlive-exam
 Version:	2.603
-Release:	1
+Release:	2
 Summary:	Package for typesetting exam scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exam
