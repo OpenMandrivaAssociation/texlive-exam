@@ -1,12 +1,12 @@
 Name:		texlive-exam
-Version:	2.603
-Release:	2
+Version:	64134
+Release:	1
 Summary:	Package for typesetting exam scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exam
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exam.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exam.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exam.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exam.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -37,12 +37,12 @@ therefore clash, and should not be installed on the same
 system.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +51,7 @@ system.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
