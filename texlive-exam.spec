@@ -3,7 +3,7 @@ Version:	67600
 Release:	1
 Summary:	Package for typesetting exam scripts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exam
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/exam
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exam.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exam.doc.r%{version}.tar.xz
